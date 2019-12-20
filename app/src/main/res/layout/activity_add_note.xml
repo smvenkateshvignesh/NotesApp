@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:src="@drawable/ic_backwhite_icon" />
+
+            <ImageView
+                android:id="@+id/saveImg"
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_20dp"
+                android:src="@drawable/ic_savewhite_icon" />
+
+            <ImageView
+                android:id="@+id/deleteImg"
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_70dp"
+                android:src="@drawable/ic_deletewhite_icon" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.ci.notesapp.widgets.MyEditText
+        android:id="@+id/myTitleEV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Title"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.ci.notesapp.widgets.MyEditText
+        android:id="@+id/myDesEV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:hint="Description"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintEnd_toEndOf="@+id/myTitleEV"
+        app:layout_constraintStart_toStartOf="@+id/myTitleEV"
+        app:layout_constraintTop_toBottomOf="@+id/myTitleEV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

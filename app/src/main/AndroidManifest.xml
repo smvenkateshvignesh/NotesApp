@@ -16,7 +16,8 @@
 
         </activity>
         <activity android:name=".ui.noteslist.NotesListActivity"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask"
+            android:theme="@style/AppNoActionBarTheme"></activity>
         <activity android:name=".ui.splash.SplashScreen"
 
             android:theme="@style/AppNoActionBarTheme">

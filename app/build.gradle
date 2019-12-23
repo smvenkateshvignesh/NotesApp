@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 apply from: 'autodimension.gradle'
 
@@ -34,9 +35,18 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'org.jetbrains.anko:anko-common:0.9'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'
 
     implementation 'androidx.cardview:cardview:1.0.0'
+    def room_version = "2.2.3"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "android.arch.persistence.room:compiler:$room_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+
+
+
 
 }

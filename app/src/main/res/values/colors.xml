@@ -10,4 +10,6 @@
     <color name="black">#000000</color>
     <color name="blue_grey">#90A4AE</color>
     <color name="title_ble">#64B5F6</color>
+
+    <color name="gold_main">#FFC100</color>
 </resources>

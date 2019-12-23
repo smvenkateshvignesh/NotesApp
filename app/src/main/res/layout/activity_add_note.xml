@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,7 +13,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,7 +26,7 @@
                 android:id="@+id/backImg"
                 android:layout_width="@dimen/_25dp"
                 android:layout_height="@dimen/_25dp"
-                android:src="@drawable/ic_backwhite_icon" />
+                android:src="@drawable/ic_backgold_icon" />
 
             <ImageView
                 android:id="@+id/saveImg"
@@ -33,7 +34,7 @@
                 android:layout_height="@dimen/_25dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="@dimen/_20dp"
-                android:src="@drawable/ic_savewhite_icon" />
+                android:src="@drawable/ic_savegold_icon" />
 
             <ImageView
                 android:id="@+id/deleteImg"
@@ -41,7 +42,7 @@
                 android:layout_height="@dimen/_25dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="@dimen/_70dp"
-                android:src="@drawable/ic_deletewhite_icon" />
+                android:src="@drawable/ic_deletegold_icon" />
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
@@ -54,7 +55,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:hint="Title"
+        android:inputType="textCapSentences"
         android:textSize="@dimen/_16sp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
@@ -62,13 +65,18 @@
     <com.ci.notesapp.widgets.MyEditText
         android:id="@+id/myDesEV"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:background="@null"
+        android:gravity="top|left"
         android:hint="Description"
-        android:textSize="@dimen/_16sp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/myTitleEV"
         app:layout_constraintStart_toStartOf="@+id/myTitleEV"
         app:layout_constraintTop_toBottomOf="@+id/myTitleEV" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

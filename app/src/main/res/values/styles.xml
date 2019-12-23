@@ -75,7 +75,7 @@
     <item name="android:windowLightStatusBar">true</item>
     </style>
 <style name="AppNoActionBarTheme1" parent="AppNoActionBarTheme">
-    <item name="colorAccent">#616161</item>
+    <item name="colorAccent">@color/gold_main</item>
 </style>
 
     <!--TextView-->

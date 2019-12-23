@@ -28,20 +28,19 @@
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Title"
-                android:textColor="#F4564E"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
                 android:fontFamily="@string/helveticaNeue_bold"
+                android:text="Title"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_14sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/view"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_1dp"
+                android:layout_height="0.25dp"
                 android:layout_marginTop="10dp"
                 android:background="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:alpha="0.8"
-        card_view:cardBackgroundColor="#B0BEC5"
+        card_view:cardBackgroundColor="#ffffff"
         card_view:cardElevation="@dimen/_5dp"
         card_view:cardMaxElevation="@dimen/_6dp">
 
@@ -101,8 +100,8 @@
 
             <ImageView
                 android:id="@+id/closeIcon"
-                android:layout_width="@dimen/_30dp"
-                android:layout_height="@dimen/_30dp"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
                 android:layout_marginTop="@dimen/_16dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -129,7 +128,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/editIcon"
-                app:srcCompat="@drawable/ic_delete_icon" />
+                app:srcCompat="@drawable/ic_deletegold_icon" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

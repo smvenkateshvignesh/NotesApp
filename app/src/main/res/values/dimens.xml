@@ -205,5 +205,6 @@
     <dimen name="_49sp">49sp</dimen>
     <dimen name="_50sp">50sp</dimen>
     <dimen name="_160dp">160dp</dimen>
+    <dimen name="_200dp">@dimen/_200dp</dimen>
 
 </resources>

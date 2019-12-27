@@ -40,6 +40,7 @@ class AddNoteActivity : BaseActivity() {
                 }
                 NotesListActivity.BUNDLE_VALUE_EDIT -> {
                     updateDetails()
+
                 }
             }
         }
@@ -56,10 +57,12 @@ class AddNoteActivity : BaseActivity() {
                     finish()
                 }
             }
+
         } else {
             DataBaseEntity(myTitleEV!!.text.toString(), myDesEV!!.text.toString())
             insertNewNotes()
         }
+
     }
 
     private fun insertNewNotes() {

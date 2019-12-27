@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/_10dp"
     xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -13,7 +12,7 @@
         android:id="@+id/listCardMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_5dp"
+        android:layout_margin="@dimen/_8dp"
         app:cardCornerRadius="@dimen/_5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,9 +40,10 @@
                 android:id="@+id/view"
                 android:layout_width="0dp"
                 android:layout_height="0.25dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="4dp"
                 android:background="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/titleTextView"
                 app:layout_constraintTop_toBottomOf="@+id/titleTextView">
 
@@ -66,9 +66,10 @@
 
             <ImageView
                 android:id="@+id/menuImageIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
                 android:layout_marginEnd="16dp"
+                android:padding="@dimen/_5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/titleTextView"
                 app:srcCompat="@drawable/ic_menu_icon" />
@@ -100,12 +101,12 @@
 
             <ImageView
                 android:id="@+id/closeIcon"
-                android:layout_width="@dimen/_20dp"
-                android:layout_height="@dimen/_20dp"
-                android:layout_marginTop="@dimen/_16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deleteIcon"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/deleteIcon"
+                app:layout_constraintTop_toTopOf="@+id/deleteIcon"
                 app:srcCompat="@drawable/ic_close_icon" />
 
             <ImageView

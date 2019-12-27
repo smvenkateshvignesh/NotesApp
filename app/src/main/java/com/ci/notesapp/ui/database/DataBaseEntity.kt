@@ -8,7 +8,9 @@ import java.io.Serializable
 class DataBaseEntity(
     var title: String? = null,
     var description: String? = null
+
 ):Serializable{
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
+    var isShowingEdit = false
 }
